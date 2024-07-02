@@ -22,4 +22,8 @@ echo "Installing dependencies"
   stlink-tools \
   >> $LOGFILE 2>&1
 
+echo "Building SDL2 from source"
+/usr/bin/time ./build-sdl2.sh \
+  >> $LOGFILE 2>&1
+
 echo "Finished"
