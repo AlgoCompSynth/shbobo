@@ -16,14 +16,15 @@ echo "Installing dependencies"
   gcc-arm-none-eabi \
   build-essential \
   libasound2-dev \
+  libxext-dev \
   libusb-1.0-0-dev \
   libx11-dev \
   openjdk-17-jdk-headless \
   stlink-tools \
   >> $LOGFILE 2>&1
 
-echo "Building SDL2 from source"
-/usr/bin/time ./build-sdl2.sh \
+echo "Installing SDL2 from source"
+/usr/bin/time ./install-sdl2.sh \
   >> $LOGFILE 2>&1
 
 echo "Finished"
