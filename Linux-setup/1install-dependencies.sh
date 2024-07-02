@@ -14,13 +14,12 @@ echo "Installing dependencies"
 /usr/bin/time sudo apt-get install -y \
   binutils-arm-none-eabi \
   gcc-arm-none-eabi \
-  libstdc++-arm-none-eabi-dev \
   build-essential \
   libasound2-dev \
-  libsdl2-dev \
   libusb-1.0-0-dev \
   libx11-dev \
   openjdk-17-jdk-headless \
+  stlink-tools \
   >> $LOGFILE 2>&1
 
 echo "Finished"
